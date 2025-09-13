@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game Hub</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+    /* Base */
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: radial-gradient(circle at top, #0f0c29, #302b63, #24243e);
+        color: #F9FAFB;
+    }
+
+    /* Header */
+    header {
+        text-align: center;
+        padding: 40px 20px;
+    }
+    header h1 {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 2.2rem;
+        color: #00FFF7;
+        text-shadow: 0 0 10px #00FFF7, 0 0 20px #00FFF7;
+        margin-bottom: 10px;
+    }
+    header p {
+        font-size: 1rem;
+        color: #A1A1AA;
+    }
+
+    /* Games Grid */
+    .games-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+
+    /* Game Card */
+    .game-card {
+        background-color: rgba(31, 41, 55, 0.9);
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 0 10px #00FFF7;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .game-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 0 20px #FF00FF, 0 0 40px #00FFF7;
+    }
+
+    /* Game Title */
+    .game-card h3 {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 0.9rem;
+        text-align: center;
+        margin: 10px 0;
+        color: #FF00FF;
+        text-shadow: 0 0 5px #FF00FF;
+    }
+
+    /* Embedded Game */
+    .game-card iframe {
+        width: 100%;
+        height: 240px;
+        border: none;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 20px;
+        color: #6B7280;
+        font-size: 0.9rem;
+    }
+
+    /* Responsive tweaks */
+    @media(max-width: 600px){
+        header h1 {
+            font-size: 1.5rem;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Game Hub</h1>
+    <p>Play 10 awesome embedded games directly here!</p>
+</header>
+
+<div class="games-container">
+    <div class="game-card">
+        <h3>Game 1</h3>
+        <iframe src="https://crazygames.com/embed/tank-trouble" allowfullscreen></iframe>
+    </div>
+    <div class="game-card">
+        <h3>Game 2</h3>
+        <iframe src="https://crazygames.com/embed/fireboy-and-watergirl-5" allowfullscreen></iframe>
+    </div>
+    <div class="game-card">
+        <h3>Game 3</h3>
+        <iframe src="https://crazygames.com/embed/uno-online" allowfullscreen></iframe>
+    </div>
+    <div class="game-card">
+        <h3>Game 4</h3>
+        <iframe src="https://crazygames.com/embed/stickman-hook" allowfullscreen></iframe>
+    </div>
+    <div class="game-card">
+        <h3>Game 5</h3>
+        <iframe src="https://crazygames.com/embed/moto-x3m" allowfullscreen></iframe>
+    </div>
+    <div class="game-card">
+        <h3>Game 6</h3>
+        <iframe src="https://crazygames.com/embed/2048" allowfullscreen></iframe>
+    </div>
+    <div class="game-card">
+        <h3>Game 7</h3>
+        <iframe src="https://crazygames.com/embed/crossy-road" allowfullscreen></iframe>
+    </div>
+    <div class="game-card">
+        <h3>Game 8</h3>
+        <iframe src="https://crazygames.com/embed/snail-bob" allowfullscreen></iframe>
+    </div>
+    <div class="game-card">
+        <h3>Game 9</h3>
+        <iframe src="https://crazygames.com/embed/slope" allowfullscreen></iframe>
+    </div>
+    <div class="game-card">
+        <h3>Game 10</h3>
+        <iframe src="https://crazygames.com/embed/basket-slam-dunk" allowfullscreen></iframe>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 Game Hub. All rights reserved.
+</footer>
+
+</body>
+</html>
